@@ -1,16 +1,22 @@
 using System.Runtime.CompilerServices;
 using JetBrains.Annotations;
+using NUnit.Framework;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 { 
     private int currentLevel;
      private int pointThreshold;
-    private bool isGameOver;
+    private bool isGameOver = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+
+    private const int DemoLevel = 1;
+
     void Start()
     {
-        
+        isGameOver = false;
+
+        StartLevel(DemoLevel);
     }
 
     // Update is called once per frame
@@ -18,9 +24,16 @@ public class GameManager : MonoBehaviour
     {
         
     }  
-    public void StartLevel(int level){}
+    public void StartLevel(int level)
+    {
+        Debug.Log($"GameManager: Starting Level {level}.");
+        currentLevel = level;
+    }
 
-    public void EndLevel(bool won){}
+    public void EndLevel(bool won)
+    {
+        isGameOver = true;
+    }
 
     public void AddScore(int amount){}
 
