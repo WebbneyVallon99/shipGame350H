@@ -1,7 +1,12 @@
+using System.Runtime.CompilerServices;
+using JetBrains.Annotations;
 using UnityEngine;
 
-public class FishyShip : MonoBehaviour
-{
+public class GameManager : MonoBehaviour
+{ 
+    private int currentLevel;
+     private int pointThreshold;
+    private bool isGameOver;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -12,10 +17,12 @@ public class FishyShip : MonoBehaviour
     void Update()
     {
         
-    }
+    }  
+    public void StartLevel(int level){}
 
-    void gameController()
-    {
-        
-    }
+    public void EndLevel(bool won){}
+
+    public void AddScore(int amount){}
+
+    public void TakeDamage(int dmgAmount){}    
 }
