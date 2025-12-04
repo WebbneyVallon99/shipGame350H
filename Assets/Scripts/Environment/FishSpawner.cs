@@ -2,32 +2,64 @@ using UnityEngine;
 
 public class FishSpawner : MonoBehaviour
 {
-    public GameObject[] fishPrefabs;     
-    public float spawnInterval = 2f;     
-    public float spawnRangeY = 3f;       
-    public float spawnX = 10f;
+    public float spawnInterval = 2f;
+    public GameObject[] fishPrefabs;      
 
-    private float timer;
+    private bool isSpawning = false;
+    private Coroutine spawnRoutine;
 
-    void Update()
+    private void Start()
     {
-        timer += Time.deltaTime;
+        StartSpawning();
+    }
 
-        if (timer >= spawnInterval)
+    public void StartSpawning()
+    {
+        if (isSpawning) return;
+
+        isSpawning = true;
+        spawnRoutine = StartCoroutine(SpawnLoop());
+    }
+
+    public void StopSpawning()
+    {
+        if (!isSpawning) return;
+
+        isSpawning = false;
+
+        if (spawnRoutine != null)
+            StopCoroutine(spawnRoutine);
+    }
+
+    private System.Collections.IEnumerator SpawnLoop()
+    {
+        while (isSpawning)
         {
             SpawnFish();
-            timer = 0f;
+            yield return new WaitForSeconds(spawnInterval);
         }
     }
 
     private void SpawnFish()
     {
-        
+        if (fishPrefabs == null || fishPrefabs.Length == 0)
+        {
+            Debug.LogWarning("No fish prefabs assigned!");
+            return;
+        }
+
         int index = Random.Range(0, fishPrefabs.Length);
-        GameObject fish = fishPrefabs[index];
+        GameObject chosenFish = fishPrefabs[index];
 
-        Vector2 pos = new Vector2(spawnX, Random.Range(-spawnRangeY, spawnRangeY));
+        // Temporary vertical randomness (Cheep-Cheep style)
+        float y = Random.Range(-1f, 1f);
 
-        Instantiate(fish, pos, Quaternion.identity);
+        Vector3 spawnPos = new Vector3(
+            transform.position.x, 
+            y,
+            0f
+        );
+
+        Instantiate(chosenFish, spawnPos, Quaternion.identity);
     }
 }
