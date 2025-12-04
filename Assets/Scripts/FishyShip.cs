@@ -26,7 +26,8 @@ public class GameManager : MonoBehaviour
     }  
     public void StartLevel(int level)
     {
-        Debug.Log($"GameManager: Starting Level {level}, game will end if ship Hp reaches 0.");
+
+        Debug.Log($"GameManager: Starting Level {level}.");
         currentLevel = level;
     }
 
