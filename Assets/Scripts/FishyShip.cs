@@ -26,6 +26,7 @@ public class GameManager : MonoBehaviour
     }  
     public void StartLevel(int level)
     {
+
         Debug.Log($"GameManager: Starting Level {level}.");
         currentLevel = level;
     }
