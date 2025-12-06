@@ -112,3 +112,50 @@ Today we had a stand up and addressed our availability and developed a routine o
 3. **✅ Workflow Optimization**
    - Clear task distribution system
    - Defined collaborative work protocols
+
+# Weekly Progress Report - Dec 6
+
+### 👥 Team Collaboration
+
+**How did your team collaborate this week?**
+
+- Met **4 times total**:  
+  - **Two Discord meetings** — Monday and Saturday  
+  - **Two in-person sessions** — Tuesday and Thursday  
+- Worked collaboratively on **UML refinement**, ensuring class relationships and responsibilities were clearly defined.
+- Improved **task delegation**, making workflow more efficient and organized.
+- Shared progress through **video demos** to showcase updated features.
+- Successfully **merged all major features** into one unified project, overcoming previous integration challenges.
+
+---
+
+### 🗓️ Plans for Next Week
+
+**Tasks to complete next week:**
+
+**Webbney:**
+- Continue refining **ship mechanics** and enhance interactions with buoys.
+- Create **power-ups** that can be collected and used with the ship.
+
+**Bilal:**
+- Improve **background scrolling** behavior and advance **fish spawning logic**, including varied movement and patterns.
+- Make fish **collectible** and track score to refine the gameplay loop and end conditions.
+- Incorporate a **level manager** to build additional levels and increase difficulty.
+
+**Both:**
+- Begin integrating **level progression** and early gameplay structure.
+
+**Challenges to be faced:**
+
+- Ensuring all new systems integrate smoothly with the existing merged codebase.  
+- Coordinating asset placement and pacing as more features become active simultaneously.  
+- Designing and implementing a **boss battle** at the end of the final level.
+
+---
+
+### 📝 Additional Notes
+
+- Current merged build includes working **background scroller**, **buoy hazards**, **fish spawner**, and **ship movement/jumping** mechanics.
+- Work will no longer be done on separate branches; development will proceed on a unified workflow on the main branch.
+ instead, just on the main branch. We will communicate when we push code.
+
