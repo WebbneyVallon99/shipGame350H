@@ -113,7 +113,117 @@ Today we had a stand up and addressed our availability and developed a routine o
    - Clear task distribution system
    - Defined collaborative work protocols
 
-# Weekly Progress Report - Dec 6
+# 📊 Weekly Progress Report - Dec 6
+
+
+## 👥 **Team Celestials**
+
+### **Team Members & Contributions:**
+
+### **Bilal Burton - Tasks Completed**
+- ✅ Create background scroller
+- ✅ Create Fish Spawner
+- ✅ Make Fish Spawn
+
+### **Webbney Vallon - Tasks Completed**
+- ✅ Create game manager
+- ✅ Make ship controllable by user
+- ✅ Create buoy hazard spawner
+- ✅ Create collision interaction between buoy and ship
+
+---
+
+## 📈 **GitHub Activity Summary**
+
+### **Recent Commits:**
+- **bouy, ship, collision feature set** · `WebbneyVallon99/shipGame350H@9efd0dd`
+- **Implement FishSpawner and FishQuirks classes** · `WebbneyVallon99/shipGame350H@3d85ccc`
+- **Created BackgroundScroller functionality** · `WebbneyVallon99/shipGame350H@befc221`
+- **Ship moving functionality complete** · `WebbneyVallon99/shipGame350H@3471d88`
+
+### **Key Achievement:**
+✅ **Successfully merged all work onto one branch and resolved all merge conflicts**
+
+---
+
+## 🎯 **Weekly Accomplishments**
+
+### **Ship & Controls**
+- ✅ Ship controlled by user via **A, D, and Space keys**
+- ✅ Full horizontal movement with limited vertical movement
+- ✅ Ship cannot leave game window boundaries
+- ✅ Ship collides with horizontal borders, vertical borders, and buoys
+
+### **Buoy System**
+- ✅ Buoys despawn upon collision with ship or game borders
+- ✅ Ship only takes damage from buoy collisions (via interfacing)
+- ✅ Buoys spawn in random orientations (1, 2, or 3)
+- ✅ Buoy spawning stops when ship HP reaches zero
+
+### **Game Management**
+- ✅ Ship movement only when game manager reads game as active
+- ✅ Game ends when ship's HP reaches zero
+
+### **Visual & Environment**
+- ✅ Background scrolls automatically during gameplay
+- ✅ Fish spawn randomly with different sizes and point values
+- ✅ Fish enter screen from multiple directions and despawn when off-screen
+
+### **Gameplay Mechanics**
+- ✅ Fish can be collected by ship for points
+- ✅ Collectible interface implemented for future item expansion
+
+---
+
+## 🚧 **Challenges Faced**
+
+### **Visual Issues**
+- ❌ Background and fish are **blurry and not scaled properly**
+
+### **Fish Behavior Problems**
+- ❌ Fish only move in **one wave pattern**
+- ❌ Fish don't come from **out of the water** or **left/right sides**
+- ❌ Fish move at **same speed as background** (no varying speeds/angles)
+- ❌ Fish have **no gravity or collision physics**
+
+### **Ship Mechanics Issues**
+- ❌ Ship can **jump multiple times** (unintended)
+- ❌ Ship feels **floaty** (unbalanced jump force, gravity, move speed values)
+
+### **Spawn System Problems**
+- ❌ Buoys do **not consistently spawn** in random intervals (1, 2, 3)
+
+### **Game Progression Issues**
+- ❌ Only **one game ending condition** (HP reaching zero)
+
+---
+
+## ✅ **Resolution Plan**
+
+### **Weekend Development Focus:**
+1. **Visual Fixes**
+   - Adjust background and fish scaling
+   - Fix blurriness in sprite rendering
+
+2. **Fish System Overhaul**
+   - Implement varied movement patterns
+   - Add gravity and collision physics
+   - Create multiple spawn directions (water surface, sides)
+   - Implement speed and angle variations
+
+3. **Ship Mechanics Tuning**
+   - Fix multiple jump bug
+   - Balance jump force, gravity, and movement values
+   - Improve "feel" of ship controls
+
+4. **Spawn System Improvements**
+   - Fix buoy random interval spawning
+   - Ensure consistent 1, 2, 3 orientation distribution
+
+5. **Game Progression**
+   - Add additional win/loss conditions
+   - Implement level progression system
+
 
 ### 👥 Team Collaboration
 
