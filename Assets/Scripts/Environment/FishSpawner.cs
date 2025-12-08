@@ -51,8 +51,7 @@ public class FishSpawner : MonoBehaviour
         int index = Random.Range(0, fishPrefabs.Length);
         GameObject chosenFish = fishPrefabs[index];
 
-        // Temporary vertical randomness (Cheep-Cheep style)
-        float y = Random.Range(-1f, 1f);
+        float y = Random.Range(-3.5f, 3.5f);
 
         Vector3 spawnPos = new Vector3(
             transform.position.x, 

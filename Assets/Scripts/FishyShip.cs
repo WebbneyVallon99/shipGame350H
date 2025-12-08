@@ -4,9 +4,10 @@ using NUnit.Framework;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
-{ 
+{
     private int currentLevel;
-     private int pointThreshold;
+    private int score = 0;
+    private int pointThreshold;
     private bool isGameOver = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
@@ -22,8 +23,8 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-    }  
+
+    }
     public void StartLevel(int level)
     {
 
@@ -36,7 +37,12 @@ public class GameManager : MonoBehaviour
         isGameOver = true;
     }
 
-    public void AddScore(int amount){}
+    public void AddScore(int amount)
+    {
+        score += amount;
+        Debug.Log($"[SCORE] Score updated: {score}");
 
-    public void TakeDamage(int dmgAmount){}    
+    }
+
+    public void TakeDamage(int dmgAmount) { }
 }
