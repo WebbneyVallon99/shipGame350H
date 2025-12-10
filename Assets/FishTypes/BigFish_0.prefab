@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7240932104359109649}
   - component: {fileID: 7521287698333684966}
   - component: {fileID: 6978709213867204686}
+  - component: {fileID: -7224232619326904722}
   m_Layer: 0
   m_Name: BigFish_0
   m_TagString: Untagged
@@ -107,9 +108,12 @@ MonoBehaviour:
   fishType: 2
   pointValue: 9
   horizontalSpeed: 3
-  useWaveMovement: 1
-  waveAmplitude: 0.5
-  waveFrequency: 2
+  bounceStrength: 0.5
+  bounceFrequency: 2
+  wobbleStrength: 0.15
+  wobbleSpeed: 3
+  gravity: -9
+  jumpForce: 5
 --- !u!61 &6978709213867204686
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -156,3 +160,30 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.3, y: 0.24}
   m_EdgeRadius: 0
+--- !u!50 &-7224232619326904722
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 163652683452847585}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

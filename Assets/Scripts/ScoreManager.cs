@@ -14,13 +14,18 @@ public class ScoreManager : MonoBehaviour
         else
             Destroy(gameObject);
     }
-    
+
     public void AddPoints(FishType type)
     {
         int points = GetPointValue(type);
         totalScore += points;
 
         Debug.Log($"[SCORE] Added {points} points from a {type}. Total = {totalScore}");
+        if (GameManager.Instance != null){
+
+            GameManager.Instance.CheckLevelProgression();
+
+        }
     }
 
     private int GetPointValue(FishType type)
@@ -28,13 +33,13 @@ public class ScoreManager : MonoBehaviour
         switch (type)
         {
             case FishType.Small:
-                return 5;
+                return 3;
 
             case FishType.Medium:
-                return 10;
+                return 6;
 
             case FishType.Large:
-                return 20;
+                return 9;
 
             default:
                 return 1;

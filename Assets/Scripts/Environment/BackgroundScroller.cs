@@ -3,17 +3,20 @@ using UnityEngine;
 public class BackgroundScroller : MonoBehaviour
 {
     public float scrollSpeed = 0.1f;
-    private Material mat;
-    private Vector2 offset;
+    private Renderer rend;
 
     void Start()
     {
-        mat = GetComponent<Renderer>().material;
+        rend = GetComponent<Renderer>();
     }
 
     void Update()
     {
+        if (rend == null || rend.material == null)
+            return;
+
+        Vector2 offset = rend.material.mainTextureOffset;
         offset.x += scrollSpeed * Time.deltaTime;
-        mat.mainTextureOffset = offset;
+        rend.material.mainTextureOffset = offset;
     }
 }

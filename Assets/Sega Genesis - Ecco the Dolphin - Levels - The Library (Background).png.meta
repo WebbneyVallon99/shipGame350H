@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a4ac14a8e02e160449a911cea9dab64c
+guid: d6cd1879d06a74e4b9b0311e47107151
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6352591823112938816
-    second: Sega Genesis - Ecco Jr. - Level Maps - Shark Sea (Background)_0
+      213: 323463744117223418
+    second: Sega Genesis - Ecco the Dolphin - Levels - The Library (Background)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sega Genesis - Ecco Jr. - Level Maps - Shark Sea (Background)_0
+      name: Sega Genesis - Ecco the Dolphin - Levels - The Library (Background)_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 4694
-        height: 1184
+        width: 2944
+        height: 700
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 045a2bb0b90f82850800000000000000
-      internalID: 6352591823112938816
+      spriteID: aff23ddbf8c2d7400800000000000000
+      internalID: 323463744117223418
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Sega Genesis - Ecco Jr. - Level Maps - Shark Sea (Background)_0: 6352591823112938816
+      Sega Genesis - Ecco the Dolphin - Levels - The Library (Background)_0: 323463744117223418
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
