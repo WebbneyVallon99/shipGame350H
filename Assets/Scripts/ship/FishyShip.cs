@@ -82,7 +82,7 @@ public class GameManager : MonoBehaviour
             currentLevel + 1 >= spawnIntervals.Length)
             return;
 
-        if (ScoreManager.Instance.totalScore >= scoreThresholds[currentLevel])
+        if (ScoreManager.Instance.totalScore >= scoreThresholds[currentLevel + 1])
         {
             Debug.Log("LEVEL UP!");
             StartLevel(currentLevel + 1);

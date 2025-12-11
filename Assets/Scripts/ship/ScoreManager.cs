@@ -28,7 +28,7 @@ public class ScoreManager : MonoBehaviour
         }
     }
 
-    private int GetPointValue(FishType type)
+    public int GetPointValue(FishType type)
     {
         switch (type)
         {
