@@ -1,9 +1,9 @@
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+public class LevelManager : MonoBehaviour
 {
 
-    public static GameManager Instance;
+    public static LevelManager Instance;
 
     [Header("Level Progression")]
     public int[] scoreThresholds;   // e.g. [20, 50, 100]
