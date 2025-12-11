@@ -1,4 +1,4 @@
 public interface ICollectible
 {
-    void OnCollected();
+    void OnCollected(PlayerShip player);
 }
